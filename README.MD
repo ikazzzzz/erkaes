@@ -22,7 +22,7 @@ pip install -r requirements.txt
 ```
 
 ## *Notes
-Make sure you have the necessary permissions before using this tool in any environment (sudo).
+Make sure you have the necessary permissions before using this tool in any environment (**sudo**).
 
 ### SQLi Scanner
 
