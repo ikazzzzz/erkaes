@@ -24,6 +24,8 @@ pip install -r requirements.txt
 ## *Notes
 Make sure you have the necessary permissions before using this tool in any environment (**sudo**).
 
+## Module Usage
+
 ### SQLi Scanner
 
 #### Usage Examples
