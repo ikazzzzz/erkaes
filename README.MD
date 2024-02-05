@@ -14,9 +14,19 @@ RKS Tools is a versatile collection of hacking tools designed for various securi
 6. [PortScanner](#portscanner)
 7. [Crawler](#crawler)
 
-## SQLi Scanner
+## Installation
+```bash
+git clone https://github.com/ikazzzzz/erkaes
+cd erkaes
+pip install -r requirements.txt
+```
 
-### Usage Examples
+## *Notes
+Make sure you have the necessary permissions before using this tool in any environment (sudo).
+
+### SQLi Scanner
+
+#### Usage Examples
 
 - Scan a specific URL for SQL injection vulnerabilities:
 
@@ -25,9 +35,9 @@ python3 rks.py -m 1 -u http://example.com/login.php
 ```
 
 
-## Trace-XSS
+### Trace-XSS
 
-### Usage Examples
+#### Usage Examples
 
 - Discover XSS vulnerabilities using various methods:
 
@@ -37,9 +47,9 @@ python3 rks.py -m 2 -f /output/crawl/example.com.txt
 python3 rks.py -m 2 -u http://example.com/listproducts.php?cat=FUZZ
 ```
 
-## Trojans
+### Trojans
 
-### Usage Examples
+#### Usage Examples
 
 - Execute trojan functions, such as scraping emails, sending emails, or setting up a listening server:
 
@@ -49,9 +59,9 @@ python3 rks.py -m 3 -trojans send_email -s sender@example.com -r recipient@examp
 python3 rks.py -m 3 -trojans listening -ip 192.168.1.1 -p 9888
 ```
 
-## DNS Enum
+### DNS Enum
 
-### Usage Examples
+#### Usage Examples
 
 - Enumerate DNS information for a domain:
 
@@ -59,9 +69,9 @@ python3 rks.py -m 3 -trojans listening -ip 192.168.1.1 -p 9888
 python3 rks.py -m 4 -d example.com -o dnsout.txt
 ```
 
-## CryptoSpyder
+### CryptoSpyder
 
-### Usage Examples
+#### Usage Examples
 
 - Collect packet information from a network interface:
 
@@ -69,9 +79,9 @@ python3 rks.py -m 4 -d example.com -o dnsout.txt
 python3 rks.py -m 5 -i eth0
 ```
 
-## PortScanner
+### PortScanner
 
-### Usage Examples
+#### Usage Examples
 
 - Scan specific ports for a domain or IP address:
 
@@ -81,9 +91,9 @@ python3 rks.py -m 6 -ip 45.121.219.136 -p 75-85
 python3 rks.py -m 6 -d example.com -p all
 ```
 
-## Crawler
+### Crawler
 
-### Usage Examples
+#### Usage Examples
 
 - Crawl a website domain for URLs:
 
@@ -91,5 +101,4 @@ python3 rks.py -m 6 -d example.com -p all
 python3 rks.py -m 7 -d example.com
 ```
 
-## *Notes
-Pastikan Anda memiliki izin yang diperlukan sebelum menggunakan tools ini di lingkungan apa pun (sudo).
+
